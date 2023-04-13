@@ -9,8 +9,17 @@
     <body>
         <script>
             if (window.screen.width < 800) {
-                
+                localStorage.setItem("currentError", "mobileUser");
+
+                Error();
+            }
+
+            else {
+                window.location.href = `../Note/home.html`;
             }
         </script>
+
+        <script src="../Note/Errors/index.js"></script>
+        <script src="../Note/Assets/JS/index.js"></script>
     </body>
 </html>
